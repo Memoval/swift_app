@@ -11,6 +11,13 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak var The_title: UILabel!
     
+    @IBOutlet weak var text1: UITextField!
+    
+    
+    @IBOutlet weak var text2: UITextField!
+    
+    @IBOutlet weak var answer: UILabel!
+    
     var tap = 0
     
     @IBAction func The_Button_pushed(_ sender: Any) {
@@ -19,6 +26,8 @@ class ViewController: UIViewController {
         if tap > 5 {
             The_title.text="Stop pusing that shit mofaka!"
         }
+        
+        answer.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
     }
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -36,22 +36,57 @@
                                     <action selector="The_Button_pushed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fvD-sF-7pA"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gfM-Ib-duk">
+                                <rect key="frame" x="137.5" y="219" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="4uD-eT-hYC"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6DN-8g-KBW">
+                                <rect key="frame" x="137.5" y="288" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="aWO-zA-R3A"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="answer boi" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uv0-QZ-y04">
+                                <rect key="frame" x="146" y="358" width="83" height="21"/>
+                                <color key="tintColor" red="0.76303676560170719" green="0.96501532321622152" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.74913871302799029" green="0.98014355596239111" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.76222500204516297" green="0.99722503052236444" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="MEF-JC-SMk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Gmw-tG-WzT"/>
+                            <constraint firstItem="gfM-Ib-duk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GrL-WA-EwU"/>
+                            <constraint firstItem="6DN-8g-KBW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Lzh-Px-TgM"/>
+                            <constraint firstItem="Uv0-QZ-y04" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Sq3-gy-IxW"/>
                             <constraint firstItem="MEF-JC-SMk" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="15" id="aBe-mS-8iG"/>
                             <constraint firstItem="vQP-EJ-9SL" firstAttribute="top" secondItem="MEF-JC-SMk" secondAttribute="bottom" constant="100" id="cw8-1A-8yD"/>
+                            <constraint firstItem="Uv0-QZ-y04" firstAttribute="top" secondItem="6DN-8g-KBW" secondAttribute="bottom" constant="40" id="hAa-js-Qyz"/>
                             <constraint firstItem="vQP-EJ-9SL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k7g-wg-oVF"/>
+                            <constraint firstItem="gfM-Ib-duk" firstAttribute="top" secondItem="vQP-EJ-9SL" secondAttribute="bottom" constant="36" id="r3c-KC-5Fd"/>
+                            <constraint firstItem="6DN-8g-KBW" firstAttribute="top" secondItem="gfM-Ib-duk" secondAttribute="bottom" constant="39" id="uIL-e0-y7O"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="The_title" destination="MEF-JC-SMk" id="HAq-0H-MKm"/>
+                        <outlet property="answer" destination="Uv0-QZ-y04" id="Xj1-hC-LKN"/>
+                        <outlet property="text1" destination="gfM-Ib-duk" id="PJ5-4s-08c"/>
+                        <outlet property="text2" destination="6DN-8g-KBW" id="m8I-bd-38o"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="133.5832083958021"/>
         </scene>
     </scenes>
 </document>
