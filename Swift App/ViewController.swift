@@ -21,13 +21,17 @@ class ViewController: UIViewController {
     var tap = 0
     
     @IBAction func The_Button_pushed(_ sender: Any) {
-         The_title.text = "Hello there MOFAKA!"
+        The_title.text = "Hello there MOFAKA!"
         tap = tap + 1
         if tap > 5 {
             The_title.text="Stop pusing that shit mofaka!"
         }
-        
-        answer.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        let addition = true
+        if addition {
+            answer.text = "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+        }else {
+            answer.text = "Answer: \(Double(text1.text!)! - Double(text2.text!)!)"
+        }
     }
     override func viewDidLoad() {
         super.viewDidLoad()
